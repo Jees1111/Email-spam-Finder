@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Mail Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload = "checkAuth()">
+    
+    <div class="container">
+        <h1>Spam Mail Detector</h1>
+        <form id="mailForm">
+            <label for="emailSubject">Email Subject:</label>
+            <input type="text" id="emailSubject" required>
+
+            <label for="emailBody">Email Body:</label>
+            <textarea id="emailBody" required></textarea>
+
+            <button type="submit">Check for Spam</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
